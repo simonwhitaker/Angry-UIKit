@@ -29,7 +29,13 @@
         UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:allViews];
         collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
         
+        // Give the main view a kick
+        UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[self.dynamicView] mode:UIPushBehaviorModeInstantaneous];
+        pushBehavior.magnitude = 10.0;
+        pushBehavior.angle = -0.5;
+        
         [self.dynamicAnimator addBehavior:collisionBehavior];
+        [self.dynamicAnimator addBehavior:pushBehavior];
         [self.dynamicAnimator addBehavior:gravityBehavior];
         self.dynamicAnimator.delegate = self;
     }
