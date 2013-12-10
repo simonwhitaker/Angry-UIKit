@@ -12,13 +12,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="6fy-fD-c3h">
-                                <rect key="frame" x="462" y="103" width="100" height="100"/>
+                            <view contentMode="scaleToFill" id="6fy-fD-c3h" userLabel="Dynamic View">
+                                <rect key="frame" x="462" y="123" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12971201539999999" green="0.55562716720000005" blue="0.84393900629999996" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="sAK-nH-ODj" appends="YES" id="ghq-8e-VZX"/>
                                 </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="9rL-6u-rhH" userLabel="Obstacle">
+                                <rect key="frame" x="512" y="541" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="5qh-eJ-PsO" userLabel="Obstacle">
+                                <rect key="frame" x="512" y="596" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Ek5-qt-xGh" userLabel="Obstacle">
+                                <rect key="frame" x="512" y="651" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6od-ZJ-1Pv" userLabel="Obstacle">
+                                <rect key="frame" x="512" y="706" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -27,6 +47,10 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="dynamicView" destination="6fy-fD-c3h" id="BUe-xk-84t"/>
+                        <outletCollection property="obstacleViews" destination="9rL-6u-rhH" id="tnA-eq-2LR"/>
+                        <outletCollection property="obstacleViews" destination="5qh-eJ-PsO" id="Yxz-YA-NS6"/>
+                        <outletCollection property="obstacleViews" destination="Ek5-qt-xGh" id="FiT-sB-NfK"/>
+                        <outletCollection property="obstacleViews" destination="6od-ZJ-1Pv" id="EP2-QO-Nbt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

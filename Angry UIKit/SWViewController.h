@@ -11,5 +11,6 @@
 @interface SWViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIView *dynamicView;
+@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *obstacleViews;
 
 @end
