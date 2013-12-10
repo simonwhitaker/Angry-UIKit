@@ -20,15 +20,13 @@
         self.originalDynamicViewCenter = self.dynamicView.center;
         self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
         
+        NSArray *allViews = [self.obstacleViews arrayByAddingObject:self.dynamicView];
+
         // Add the gravity behaviour
-        UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.dynamicView]];
-        gravityBehavior.action = ^{
-            if (!CGRectIntersectsRect(self.view.frame, self.dynamicView.frame)) {
-            }
-        };
+        UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:allViews];
         
         // Add boundaries
-        UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.dynamicView]];
+        UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:allViews];
         collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
         
         [self.dynamicAnimator addBehavior:collisionBehavior];

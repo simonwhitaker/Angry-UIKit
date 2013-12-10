@@ -21,22 +21,22 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" id="9rL-6u-rhH" userLabel="Obstacle">
-                                <rect key="frame" x="512" y="541" width="50" height="50"/>
+                                <rect key="frame" x="522" y="541" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="5qh-eJ-PsO" userLabel="Obstacle">
-                                <rect key="frame" x="512" y="596" width="50" height="50"/>
+                                <rect key="frame" x="522" y="596" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="Ek5-qt-xGh" userLabel="Obstacle">
-                                <rect key="frame" x="512" y="651" width="50" height="50"/>
+                                <rect key="frame" x="522" y="651" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="6od-ZJ-1Pv" userLabel="Obstacle">
-                                <rect key="frame" x="512" y="706" width="50" height="50"/>
+                                <rect key="frame" x="522" y="706" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
