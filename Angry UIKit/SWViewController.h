@@ -10,4 +10,6 @@
 
 @interface SWViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIView *dynamicView;
+
 @end

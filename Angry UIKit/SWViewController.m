@@ -8,22 +8,29 @@
 
 #import "SWViewController.h"
 
-@interface SWViewController ()
-
+@interface SWViewController () <UIDynamicAnimatorDelegate>
+@property (nonatomic, strong) UIDynamicAnimator *dynamicAnimator;
 @end
 
 @implementation SWViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)handleTapGestureRecognizer:(UITapGestureRecognizer*)tapGestureRecognizer {
+    if (tapGestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        CGPoint originalDynamicViewCenter = self.dynamicView.center;
+        self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+        UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.dynamicView]];
+        gravityBehavior.action = ^{
+            if (!CGRectIntersectsRect(self.view.frame, self.dynamicView.frame)) {
+                [self.dynamicAnimator removeAllBehaviors];
+                double delayInSeconds = 1.0;
+                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                    self.dynamicView.center = originalDynamicViewCenter;
+                });
+            }
+        };
+        [self.dynamicAnimator addBehavior:gravityBehavior];
+    }
 }
 
 @end
