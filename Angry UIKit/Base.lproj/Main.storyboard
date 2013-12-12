@@ -22,12 +22,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="Ek5-qt-xGh" userLabel="Obstacle">
+                            <view tag="9999" contentMode="scaleToFill" id="Ek5-qt-xGh" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="668" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="6od-ZJ-1Pv" userLabel="Obstacle">
+                            <view tag="9999" contentMode="scaleToFill" id="6od-ZJ-1Pv" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="718" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,17 +42,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="We5-Uu-Qez" userLabel="Obstacle">
+                            <view tag="9999" contentMode="scaleToFill" id="We5-Uu-Qez" userLabel="Obstacle">
                                 <rect key="frame" x="644" y="668" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="OWd-IS-LIY" userLabel="Obstacle">
+                            <view tag="9999" contentMode="scaleToFill" id="OWd-IS-LIY" userLabel="Obstacle">
                                 <rect key="frame" x="644" y="718" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="4F7-f2-6Kl" userLabel="Obstacle">
+                            <view tag="9999" contentMode="scaleToFill" id="4F7-f2-6Kl" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="618" width="171" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,7 +63,7 @@
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="sAK-nH-ODj" appends="YES" id="3JK-gT-6TV"/>
