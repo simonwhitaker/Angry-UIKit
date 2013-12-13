@@ -19,14 +19,15 @@ typedef NS_ENUM(NSUInteger, SWDemoStage) {
     SWDemoStageGravityWithBoundary,
     SWDemoStageGravityWithBoundaryAndObstacles,
     SWDemoStageGravityWithBoundaryObstaclesAndPush,
+    SWDemoStageGravityWithBoundaryObstaclesAndPushWithImages,
 };
 
 @implementation SWViewController
 
-static SWDemoStage demoStage = SWDemoStageGravity;
+static SWDemoStage demoStage = SWDemoStageGravityWithBoundaryObstaclesAndPushWithImages;
 
 - (void)viewDidLoad {
-    if (demoStage == SWDemoStageGravityWithBoundaryObstaclesAndPush) {
+    if (demoStage >= SWDemoStageGravityWithBoundaryObstaclesAndPush) {
         self.dynamicView.center = CGPointMake(self.dynamicView.frame.size.width / 2, self.dynamicView.frame.size.height / 2);
     }
     else {
@@ -45,6 +46,12 @@ static SWDemoStage demoStage = SWDemoStageGravity;
     else if (demoStage <= SWDemoStageGravityWithBoundary) {
         [self.obstacleViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
         self.obstacleViews = nil;
+    }
+    
+    if (demoStage < SWDemoStageGravityWithBoundaryObstaclesAndPushWithImages) {
+        for (UIView *view in [self.obstacleViews arrayByAddingObject:self.dynamicView]) {
+            [view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        }
     }
 }
 
@@ -79,7 +86,7 @@ static SWDemoStage demoStage = SWDemoStageGravity;
         }
         
         // Give the main view a kick
-        if (demoStage == SWDemoStageGravityWithBoundaryObstaclesAndPush) {
+        if (demoStage >= SWDemoStageGravityWithBoundaryObstaclesAndPush) {
             UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[self.dynamicView] mode:UIPushBehaviorModeInstantaneous];
             pushBehavior.magnitude = 15.0;
             pushBehavior.angle = -0.4;

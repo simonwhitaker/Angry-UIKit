@@ -15,51 +15,111 @@
                             <view contentMode="scaleToFill" id="6fy-fD-c3h" userLabel="Dynamic View">
                                 <rect key="frame" x="20" y="668" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Angry View" id="wmV-Xl-Z4g">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.12971201539999999" green="0.55562716720000005" blue="0.84393900629999996" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="5qh-eJ-PsO" userLabel="Obstacle">
                                 <rect key="frame" x="583" y="568" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scared View" id="Eml-eE-h3k">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view tag="9999" contentMode="scaleToFill" id="Ek5-qt-xGh" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="668" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brick" id="2lE-PX-oC9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view tag="9999" contentMode="scaleToFill" id="6od-ZJ-1Pv" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="718" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brick" id="HdD-5L-vVB">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="NGc-7J-WQ4" userLabel="Obstacle">
                                 <rect key="frame" x="583" y="518" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scared View" id="6gq-iK-osk">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="Sb2-ta-32d" userLabel="Obstacle">
                                 <rect key="frame" x="583" y="418" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scared View" id="sA6-tL-xJb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view tag="9999" contentMode="scaleToFill" id="We5-Uu-Qez" userLabel="Obstacle">
                                 <rect key="frame" x="644" y="668" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brick" id="i08-JQ-pgL">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view tag="9999" contentMode="scaleToFill" id="OWd-IS-LIY" userLabel="Obstacle">
                                 <rect key="frame" x="644" y="718" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brick" id="UhK-Eg-nrZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view tag="9999" contentMode="scaleToFill" id="4F7-f2-6Kl" userLabel="Obstacle">
                                 <rect key="frame" x="523" y="618" width="171" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Log" id="Dxe-Rd-gdD">
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="Z8T-Yu-DmR" userLabel="Obstacle">
                                 <rect key="frame" x="583" y="468" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scared View" id="TMv-gF-ogr">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.011788656139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -92,6 +152,12 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Angry View" width="100" height="100"/>
+        <image name="Brick" width="50" height="50"/>
+        <image name="Log" width="171" height="50"/>
+        <image name="Scared View" width="50" height="50"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
