@@ -61,10 +61,14 @@ static SWDemoStage demoStage = SWDemoStageGravityWithBoundaryObstaclesAndPushWit
 
 - (IBAction)handleTapGestureRecognizer:(UITapGestureRecognizer*)tapGestureRecognizer {
     if (tapGestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        // Save original center values so we can reset the view after the animation
         self.originalDynamicViewCenter = self.dynamicView.center;
         self.originalObstacleViewCenters = [self.obstacleViews valueForKeyPath:@"center"];
+
+        // Initialize a dynamic animator
         self.dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
         
+        // Get an array of all the views we want to add to stuff like the gravity behavior
         NSArray *allViews = [[NSArray arrayWithArray:self.obstacleViews] arrayByAddingObject:self.dynamicView];
 
         // Add the gravity behaviour
@@ -78,6 +82,7 @@ static SWDemoStage demoStage = SWDemoStageGravityWithBoundaryObstaclesAndPushWit
             [self.dynamicAnimator addBehavior:collisionBehavior];
         }
         else {
+            // If we have no boundaries, use the gravity behavior's activity block to detect when we go off screen and reset the view
             gravityBehavior.action = ^{
                 if (!CGRectIntersectsRect(self.view.frame, self.dynamicView.frame)) {
                     [self SW_reset];
