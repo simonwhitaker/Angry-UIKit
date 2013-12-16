@@ -39,7 +39,7 @@ static SWDemoStage demoStage = SWDemoStageGravityWithBoundaryObstaclesAndPushWit
         self.dynamicView.center = CGPointMake(self.view.center.x, 150);
     }
     
-    // Next position the obstacle (red and yellow) views, remove and that aren't in use in this stage
+    // Next position the obstacle (red and yellow) views, remove any that aren't in use in this stage
     if (demoStage == SWDemoStageGravityWithBoundaryAndObstacles) {
         NSArray *obstaclesToDelete = [self.obstacleViews filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"tag > 0"]];
         self.obstacleViews = [self.obstacleViews filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"tag == 0"]];
